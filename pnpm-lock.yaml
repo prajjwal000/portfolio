@@ -15,7 +15,7 @@ importers:
         specifier: ^5.2.8
         version: 5.2.8
       '@tailwindcss/vite':
-        specifier: ^4.2.1
+        specifier: ^4.2.2
         version: 4.2.2(vite@8.0.1(@types/node@24.12.0)(esbuild@0.27.4)(jiti@2.6.1))
       class-variance-authority:
         specifier: ^0.7.1
@@ -39,7 +39,7 @@ importers:
         specifier: ^3.5.0
         version: 3.5.0
       tailwindcss:
-        specifier: ^4.2.1
+        specifier: ^4.2.2
         version: 4.2.2
       tw-animate-css:
         specifier: ^1.4.0
@@ -259,8 +259,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@dotenvx/dotenvx@1.57.1':
-    resolution: {integrity: sha512-iKXuo8Nes9Ft4zF3AZOT4FHkl6OV8bHqn61a67qHokkBzSEurnKZAlOkT0FYrRNVGvE6nCfZMtYswyjfXCR1MQ==}
+  '@dotenvx/dotenvx@1.57.2':
+    resolution: {integrity: sha512-lv9+UZPnl/KOvShepevLWm3+/wc1It5kgO5Q580evnvOFMZcgKVEYFwxlL7Ohl9my1yjTsWo28N3PJYUEO8wFQ==}
     hasBin: true
 
   '@ecies/ciphers@0.2.5':
@@ -2773,7 +2773,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.14
 
-  '@dotenvx/dotenvx@1.57.1':
+  '@dotenvx/dotenvx@1.57.2':
     dependencies:
       commander: 11.1.0
       dotenv: 17.3.1
@@ -4522,7 +4522,7 @@ snapshots:
       '@babel/parser': 7.29.2
       '@babel/plugin-transform-typescript': 7.28.6(@babel/core@7.29.0)
       '@babel/preset-typescript': 7.28.5(@babel/core@7.29.0)
-      '@dotenvx/dotenvx': 1.57.1
+      '@dotenvx/dotenvx': 1.57.2
       '@modelcontextprotocol/sdk': 1.27.1(zod@3.25.76)
       '@types/validate-npm-package-name': 4.0.2
       browserslist: 4.28.1
