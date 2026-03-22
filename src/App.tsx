@@ -1,6 +1,7 @@
 import { Route, Router, Switch } from "wouter"
 
 import { SiteLayout } from "@/components/site-layout"
+import { AboutPage } from "@/pages/about"
 import { AchievementsPage } from "@/pages/achievements"
 import { CertificatesPage } from "@/pages/certificates"
 import { ContactPage } from "@/pages/contact"
@@ -15,6 +16,7 @@ export function App() {
       <SiteLayout>
         <Switch>
           <Route path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
           <Route path="/skills" component={SkillsPage} />
           <Route path="/projects" component={ProjectsPage} />
           <Route path="/certificates" component={CertificatesPage} />

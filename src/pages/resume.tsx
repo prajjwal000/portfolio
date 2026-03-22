@@ -1,12 +1,5 @@
 import { buttonVariants } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { education, resumePdfPath } from "@/data/portfolio"
+import { resumePdfPath } from "@/data/portfolio"
 import { cn } from "@/lib/utils"
 
 export function ResumePage() {
@@ -38,30 +31,6 @@ export function ResumePage() {
         />
       </div>
       {/* Fallback: some browsers handle PDFs better via <object>; iframe is standard for in-page preview. */}
-
-      <Card className="py-5 text-sm/relaxed">
-        <CardHeader>
-          <CardTitle className="text-lg">Education</CardTitle>
-          <CardDescription className="text-sm">
-            Academic background
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-5 text-sm/relaxed">
-          {education.map((e) => (
-            <div
-              key={`${e.school}-${e.period}`}
-              className="border-b border-border/60 pb-4 last:border-0 last:pb-0"
-            >
-              <p className="font-medium text-foreground">{e.school}</p>
-              <p className="text-muted-foreground">
-                {e.location} · {e.period}
-              </p>
-              <p className="mt-1 text-muted-foreground">{e.credential}</p>
-              <p className="text-muted-foreground">{e.detail}</p>
-            </div>
-          ))}
-        </CardContent>
-      </Card>
     </div>
   )
 }

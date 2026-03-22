@@ -1,5 +1,13 @@
 /** Single source of truth for site copy (aligned with resume). */
 
+export const about = {
+  summary: [
+    "My work spans both ends of the software stack, and the two levels of experience are deliberately complementary. Systems programming — browser engine contributions, network servers, language tooling — builds the kind of mechanical understanding that changes how you think about higher-level code. Application work in TypeScript, React, and Go services keeps that curiosity grounded in real use cases.",
+    "At the lower end, I contributed to the Ladybird browser engine, tracking down HTML-parsing edge cases and a session-history race condition that had been causing intermittent test failures; the patch improved WPT pass-rates by over ten tests and included regression coverage to prevent recurrence. Other projects in that space include an HTTP/1.1 server built from scratch in C with a custom request lexer and epoll event loop, and a tree-walking interpreter for a Lisp-like language in Go.",
+    "The higher-level work draws on the same foundations — an understanding of what sits beneath the abstractions and why things fail in the ways they do. Whether the task is a React frontend, a Go service, or a low-level protocol implementation, the approach is to understand the problem thoroughly, keep the code clean and tested, and see it through.",
+  ],
+} as const
+
 export const identity = {
   name: "Prajjwal Verma",
   tagline:
@@ -179,5 +187,6 @@ export const navItems = [
   { href: "/certificates", label: "Certificates" },
   { href: "/achievements", label: "Achievements" },
   { href: "/resume", label: "Resume" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const
