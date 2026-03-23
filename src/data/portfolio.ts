@@ -25,7 +25,7 @@ export const resumePdfPath = "/resume.pdf"
 export const skillGroups: { title: string; items: string[] }[] = [
   {
     title: "Languages",
-    items: ["C", "C++", "JavaScript", "TypeScript", "Python", "Go (Golang)"],
+    items: ["C", "C++", "JavaScript", "TypeScript", "Python", "Golang"],
   },
   {
     title: "Backend",
